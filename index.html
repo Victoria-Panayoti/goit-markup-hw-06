@@ -601,13 +601,25 @@
             ></textarea>
           </div>
           <div class="checkbox-field">
-            <input type="checkbox" name="accept" id="accept" class="checkbox" />
-
-            <label for="accept" class="check-label"
-              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            <label for="accept" class="check-label">
+              <input
+                type="checkbox"
+                name="accept"
+                id="accept"
+                required
+                class="checkbox"
+              />
+              <svg class="check-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+              <svg class="checked-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="link check-link">Умови договору</a></label
             >
           </div>
-          <button type="submit">Відправити</button>
+          <button type="submit" class="button-send-form">Відправити</button>
         </form>
       </div>
     </div>
