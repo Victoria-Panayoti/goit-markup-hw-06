@@ -526,14 +526,27 @@
             </li>
           </ul>
         </div>
-        <p>Підпишіться на розсилку</p>
-        <form class="form-mailing">
-          <div>
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
-            <label for="mail"></label>
-          </div>
-          <button type="submit">Підписатися</button>
-        </form>
+        <div>
+          <p class="mailing-slogan">Підпишіться на розсилку</p>
+          <form class="form-mailing">
+            <div>
+              <input
+                class="mailing-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <label for="mail"></label>
+            </div>
+            <button type="submit" class="mailing-btn">
+              Підписатися
+              <svg class="mailing-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -600,21 +613,20 @@
               class="modal-textarea"
             ></textarea>
           </div>
-          <div class="checkbox-field">
-            <label for="accept" class="check-label">
-              <input
-                type="checkbox"
-                name="accept"
-                id="accept"
-                required
-                class="checkbox"
-              />
-              <svg class="check-icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-              <svg class="checked-icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-checked"></use>
-              </svg>
+          <div class="check-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              required
+              class="input-check"
+            />
+            <label for="privacy" class="check-text">
+              <span class="checked-icon">
+                <svg width="16" height="15">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </span>
               Погоджуюся з розсилкою та приймаю
               <a href="" class="link check-link">Умови договору</a></label
             >
